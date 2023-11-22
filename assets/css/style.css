@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Josefin+Sans:wght@100&family=Kanit:wght@300&family=Open+Sans:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300&family=Sacramento&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Chivo+Mono:wght@500&family=Josefin+Sans:wght@100&family=Kanit:wght@300&family=Open+Sans:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300&family=Sacramento&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border: none;
     list-style: none;
+    font-family: "Catamaran", sans-serif;
 }
 
 :root {
@@ -14,8 +20,20 @@
     --gray:#6B6B94;
 }
 
+p {
+    color: var(--gray);
+}
+
 .fs-7 {
     font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 17px;
+}
+
+.fw-4 {
+    font-weight: 400;
 }
 
 button{
@@ -169,10 +187,6 @@ li:hover ul.submenu{
     font-weight: bold;
 }
 
-.text-gray {
-    color: var(--gray);
-}
-
 .btn1 {
     margin-right: 15px;
 }
@@ -226,8 +240,66 @@ li:hover ul.submenu{
     width: 100%;
     z-index: 1;
     top: 92%;
+    /* border: 2px solid black; */
 }
 /* Hero css end ----------------------------------------------- */
+.kidergarden{
+    margin: 150px 0;
+}
+.kidergarden .who-we-are-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.kidergarden .who-we-are {
+    font-family: "Sacramento", cursive;
+    color: var(--orange);
+}
+
+.kidergarden h1 {
+    color: var(--blue);
+    font-size: 45px;
+}
+
+.kidergarden .num {
+    color: var(--blue);
+}
+
+.kidergarden .num span {
+    color: #fff;
+    background-color: var(--orange);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.kidergarden .lorem {
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+
+.kidergarden .num span:hover{
+    background-color: var(--yellow);
+}
+
+.shape-6{
+        top: -15%;
+        left: 90%;
+        z-index: 1;
+        height: 20%;
+        width: 110px;
+        animation: move4 1.8s infinite alternate;
+}
 
 
 
@@ -254,4 +326,9 @@ li:hover ul.submenu{
 @keyframes move3 {
     50%{}
     100%{top: 81%;}
+}
+
+@keyframes move4 {
+    90%{}
+    100%{left: 88%;}
 }
