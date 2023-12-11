@@ -13,7 +13,7 @@
     border: none;
     list-style: none;
     font-family: "Catamaran", sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 :root {
@@ -274,9 +274,6 @@ li:hover ul.submenu{
 
 
 /* kindergarden css start ----------------------------------------------- */
-.kidergarden{
-    margin: 150px 0;
-}
 .kidergarden .who-we-are-img img {
     max-width: 100%;
     height: auto;
@@ -359,11 +356,11 @@ h1 {
 }
 
 .shape-6{
-    top: -15%;
+    top: 50px;
     left: 90%;
     z-index: 1;
-    height: 20%;
-    width: 110px;
+    height: 15%;
+    width: 120px;
     animation: move4 1.8s infinite alternate;
 }
 /* /kindergarden css end ----------------------------------------------- */
@@ -803,7 +800,449 @@ h1 {
 .blog .blog-content {
     background-color: #FDEEE9;
     padding: 30px;
+    border-radius: 0 0 20px 20px;
 }
+
+.blog .blog-content li{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #283d5e;
+}
+.blog .blog-content li span {
+    color: var(--orange);
+}
+
+.blog .blog-content ul li a{
+    color: #283d5e;
+    text-decoration: none;
+}
+
+.blog .blog-content ul {
+    padding-left: 0;
+}
+
+.blog .blog-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blog .blog-content h3 a {
+    color: var(--blue);
+}
+
+.blog .card {
+    border: 0;
+    border-radius: 0;
+}
+
+.blog .card-img-top {
+    border-radius: 0;
+}
+
+.blog .card img {
+    transition: all 0.5s ease-in-out;
+}
+
+.blog .card:hover img{
+    transform: rotate(2deg) scale(1.2);
+    transition: 0.5s ease-in-out ;
+}
+
+.blog .card h3 a {
+    transition: all 0.5s ease-in-out;
+}
+.blog .card:hover h3 a {
+    color: var(--orange);
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* footer css start -------------------------------------------- */
+footer {
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+footer .ketan-content h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+footer .ketan-content h2 a {
+    color: #fff;
+}
+
+footer .ketan-content p {
+    color: #fff;
+}
+
+footer .ketan-social-icon {
+    margin-top: 25px;
+}
+footer ul {
+    padding-left: 0;
+}
+
+footer .ketan-social-icon ul li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 39px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+
+footer .ketan-social-icon ul li a:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-8px);
+    background-color: var(--yellow);
+    color: #fff !important;
+}
+
+footer .ketan-social-icon ul li {
+    margin-right: 12px;
+}
+
+footer .footer-details h3 {
+    font-size: 25px;
+    color: #fff !important;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+footer .footer-details h3::before{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    background-color: var(--orange);
+    width: 50px;
+    left: 0;
+    bottom: 0;
+
+}
+
+footer .footer-details .footer-contact-info ul li {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+footer .footer-details .footer-contact-info ul li .icon {
+    font-size: 20px;
+    color: var(--orange);
+}
+
+footer .footer-details .footer-contact-info ul li span{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
+}
+
+footer .footer-details .footer-contact-info ul li a{
+    font-weight: 400;
+    color: #fff;
+    margin-left: 35px;
+}
+
+footer .footer-details ul li a {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+footer .footer-details ul li a::before{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 1px;
+    background-color: var(--orange);
+    bottom: 0;
+    left: 0;
+}
+
+footer .footer-details ul li a:hover {
+    transition: all 0.5s ease-in-out;
+    color: var(--orange);
+}
+
+footer .footer-details ul li .line:hover::before{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+}
+
+
+footer .footer-details .footer-links li {
+    margin-bottom: 18px;
+    
+}
+
+footer .footer-details .footer-contact-info li p {
+   margin-left: 30px;
+   font-size: 14px;
+}
+
+footer .footer-details .footer-links li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .footer-details .photo-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 6px;
+}
+
+footer .footer-details .photo-gallery .photo-list {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-details .photo-gallery .photo-list::before{
+    position: absolute;
+    content: " ";
+    background-color: var(--orange);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+footer .footer-details .photo-gallery .photo-list:hover::before{
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+    opacity: 0.5;
+}
+
+footer .footer-details .photo-gallery .photo-list img {
+    transition: all 0.5s ease-in-out;
+}
+footer .footer-details .photo-gallery .photo-list:hover img {
+    transform: scale(1.2);
+}
+/* /footer css end -------------------------------------------- */
+
+
+/* copy right area css start -------------------------------------------- */
+.copy-right {
+    padding: 30px 0;
+    background-color: #091629;
+}
+
+.copy-right p {
+    margin-bottom: 0;
+}
+
+.copy-right p span {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+
+.copy-right p span:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+/* /copy right area css end -------------------------------------------- */
+
+/* ---------------------------------------------------------------index section end--------------------------------------------------------------------- */
+
+/* about css start -------------------------------------------- */
+.about-banner {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/page-banner-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.about-banner .breadcrump ul .v-line {
+    color: var(--orange);
+    font-weight: 600;
+    margin-left: 21px;
+}
+.about-banner .breadcrump ul .v-line::before{
+    position: absolute;
+    content: " ";
+    top: 6px;
+    left: -10px;
+    width: 1px;
+    height: 12px;
+    background-color: var(--orange);
+}
+
+.about-banner .breadcrump h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0;
+}
+/* /about css end -------------------------------------------- */
+
+
+/* fun-fact css start -------------------------------------------- */
+.fun-fact {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/fun-facts-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.fun-fact .fun-fact-content {
+    padding: 75px 45px;
+    border-radius: 15px;
+    opacity: 0.90;
+    margin-bottom: 30px;
+}
+
+.fun-fact .fun-fact-content h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.fun-fact .fun-fact-content p {
+    font-weight: 500;
+}
+
+.fun-fact #blue {
+    background-color: #5da7bd;
+}
+
+.fun-fact #yellow {
+    background-color: #e9aa52
+}
+
+.fun-fact #purple {
+    background-color: #6a4d8d;
+}
+
+.fun-fact #red {
+   background-color: #de5e32;
+}
+
+/* /fun-fact css end -------------------------------------------- */
+
+/* instructor css end -------------------------------------------- */
+.instructor .instructor-content span {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.instructor .instructor-content h3 {
+    font-size: 35px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.instructor .instructor-img .image img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.instructor .instructor-img .image::before {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.instructor .instructor-img .image:hover::before{
+    visibility: visible;
+    opacity: 0.70;
+    transition: all 0.5s;
+}
+
+.instructor .instructor-img .image .teacher-content {
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.instructor .instructor-img .image:hover .teacher-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition: all 0.5s;
+}
+
+.instructor .instructor-img .image .teacher-content h3 {
+    font-size: 25px;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.instructor .instructor-img .image .teacher-content span {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+}
+
+.instructor .instructor-img .image .teacher-content .social {
+    margin-top: 15px;
+}
+
+.instructor .instructor-img .image .teacher-content .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    color: var(--orange);
+    transition: all 0.5s;
+}
+
+.instructor .instructor-img .image .teacher-content .social li a:hover {
+    transition: all 0.5s;
+    color: #fff !important;
+    background-color: var(--yellow);
+}
+
+.instructor .instructor-img .image .teacher-content .social li{
+    margin: 0 6px;
+}
+/* /instructor css end -------------------------------------------- */
+
+
+/* ---------------------------------------------------------------about section start--------------------------------------------------------------------- */
 
 
 @keyframes move {
