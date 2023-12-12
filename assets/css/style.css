@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6{
 
 .btn{
     background-color: var(--orange);
-    color: #fff;
+    color: #fff !important;
     
     font-weight: 500;
     margin: 0;
@@ -103,7 +103,8 @@ h1,h2,h3,h4,h5,h6{
 
 
 .btn1:hover::before {
-    transform: scaley(1)
+    transform: scaley(1);
+    
 }
 
 .btn2 {
@@ -145,6 +146,7 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar {
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    
 }
 .nav-item {
     position: relative;
@@ -664,7 +666,7 @@ h1 {
     position: relative;
 }
 
-.testimonials .slider .slider-btn {
+.slider-btn {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -1145,7 +1147,7 @@ ul {
 
 /* /fun-fact css end -------------------------------------------- */
 
-/* instructor css end -------------------------------------------- */
+/* instructor css start -------------------------------------------- */
 .instructor .instructor-content span {
     color: var(--orange);
     font-weight: 600;
@@ -1240,6 +1242,132 @@ ul {
     margin: 0 6px;
 }
 /* /instructor css end -------------------------------------------- */
+
+
+/* registration css start -------------------------------------------- */
+.registration {
+    background-image: url('../img/quote-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.quote-content {
+    max-width: 750px;
+    background-color: #fff;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.8);
+    padding: 50px;
+}
+
+.quote-content .content {
+    margin-bottom: 30px;
+}
+
+.registration .form-control {
+    height: 70px;
+    color: var(--blue);
+    border-radius: 10px;
+    font-weight: 500;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid #eeee;
+}
+
+.form-control:focus {
+    border-color: var(--orange);
+    box-shadow:unset;
+}
+
+.registration button {
+    width: 100%;
+    padding: 15px 30px;
+}
+/* /registration css end -------------------------------------------- */
+
+/* testimonials css start -------------------------------------------- */
+.bg-cream {
+    background-color: #fef3e6;;
+}
+
+.testimonials {
+    /* width: 100%; */
+}
+
+.testimonials .title {
+    margin-bottom: 45px;
+}
+.testimonials .testimonial-content p {
+    font-size: 23px;
+    font-style: italic;
+}
+
+.testimonials .testimonial-img {
+    z-index: 1;
+    padding: 5px;
+}
+
+.testimonials .testimonial-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonials .testimonial-img::before{
+    position: absolute;
+    content: " ";
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--orange);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 30s linear infinite alternate forwards;
+}
+
+.testimonials .slider1 {
+    display: flex;
+    width: 9000px;
+}
+
+.testimonials .slider-wrapper1 {
+    width: 1300px;
+    
+}
+
+.testimonial {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials .slider1 {
+    position: relative;
+}
+
+.testimonials .slider-btn1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background-color: var(--orange);
+    line-height: 55px;
+    position: absolute;
+    right: 0;
+    transition: all 0.2s;
+    transform: translateY(-40%);
+    bottom: 0;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+
+.testimonials #slider-left {
+    right: 70px;
+}
+/* /testimonials css end -------------------------------------------- */
 
 
 /* ---------------------------------------------------------------about section start--------------------------------------------------------------------- */

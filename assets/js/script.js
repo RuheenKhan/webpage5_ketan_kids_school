@@ -13,6 +13,8 @@ const initSlider = () => {
 
 window.addEventListener("load", initSlider);
 
+
+
 // var slider_wrapper = document.querySelector('.slider-wrapper');
 // let testimonials_list = slider_wrapper.getElementsByClassName('testimonials-list');
 
