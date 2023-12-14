@@ -28,3 +28,4 @@ window.addEventListener("load", initSlider);
 //     function next() {
 //         slider_wrapper.append(testimonials_list[0]);
 //     },1000)
+

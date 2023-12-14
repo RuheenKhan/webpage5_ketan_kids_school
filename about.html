@@ -8,6 +8,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
@@ -167,7 +168,7 @@
 
 
   <!-- cultural activities section start ------------------------------------------------------------ -->
-  <section class="kidergarden position-relative ptb-100">
+  <section class="cultural position-relative ptb-100">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5">
@@ -433,7 +434,10 @@
 
 
   <!-- online classes section start ------------------------------------------------------------ -->
-  <section class="kidergarden position-relative ptb-100">
+  <section class="position-relative ptb-100 o-classes position-relative">
+    <img src="./assets/img/choose-shape-1.png" class="position-absolute choose-shape-1" alt="">
+    <img src="./assets/img/choose-shape-2.png" class="position-absolute choose-shape-2" alt="">
+    <img src="./assets/img/choose-shape-3.png" class="position-absolute choose-shape-3" alt="">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5">
@@ -502,7 +506,7 @@
         <h1 class="fw-bold mt-1">What Parents Say About Us</h1>
       </div>
 
-      <div class="testimonial">
+      <div class="testimonial mySwipe">
         <div class="slider1 d-flex">
 
           <div class="slider-wrapper1 d-flex">
@@ -621,16 +625,159 @@
 
           
         </div>
-        <div class="slide-btn">
-          <button onclick="prev()" type="button" class="slider-btn1" id="slider-left"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="slide-btn" onclick="prev(-1)">
+          <button  type="button" class="slider-btn1" id="slider-left"><i class="fa-solid fa-chevron-left"></i></button>
         </div>
         <div class="slide-btn">
-          <button onclick="next()" type="button" class="slider-btn1" id="right-slider"><i class="fa-solid fa-chevron-right"></i></button>
+          <button onclick="prev(1)" type="button" class="slider-btn1" id="right-slider"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
   </div>
   <!-- /testimonials section end ------------------------------------------------------------ -->
+
+
+  <!-- pricing section start ------------------------------------------------------------ -->
+  <section class="pricing ptb-100">
+    <div class="container">
+      <div class="row text-center title">
+        <p class="who-we-are fw-bold fs-5">Pricing</p>
+        <h1 class="fw-bold mt-1">Pricing and Fees</h1>
+      </div>
+
+      <div class="pricing-table">
+        <table class="table  table-bordered">
+          <thead>
+            <tr>
+              <th>Preschool</th>
+              <th>Daily</th>
+              <th>Weekly</th>
+              <th>Monthly</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Full-Day (8:00 AM - 6:00 PM)</th>
+              <td>$80.00</td>
+              <td>$180.00</td>
+              <td>$280.00</td>
+            </tr>
+            <tr>
+              <th>Half Day (8:00 AM - 2:00 PM or 3:00 PM - 6:00 PM)</th>
+              <td>$35.00</td>
+              <td>$75.00</td>
+              <td>$275.00</td>
+            </tr>
+            <tr>
+              <th>Food Expenses Paid Per Day</th>
+              <td>$30.00</td>
+              <td>$45.00</td>
+              <td>$75.00</td>
+            </tr>
+            <tr>
+              <th>Activities</th>
+              <td>$30.00</td>
+              <td>$45.00</td>
+              <td>$75.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-content text-center mt-4">
+          <p class="fs-6">The preschool reserves the right to increase the said fees at any time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /pricing section end ------------------------------------------------------------ -->
+
+
+  <!-- newsletter section start ------------------------------------------------------------ -->
+ <section class="newsletter ptb-100 position-relative">
+  <div class="newsletter-shape-1 position-absolute">
+    <img src="./assets/img/newsletter-shape-1.png" alt="newsletter-shape-1">
+  </div>
+  <div class="newsletter-shape-2 position-absolute">
+    <img src="./assets/img/newsletter-shape-2.png" alt="newsletter-shape-2">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="newsletter-container">
+          <h2>Do You Want To Know Get Update What's Upcoming</h2>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter Email Address" class="input-text">
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ </section>
+  <!-- /newsletter section end ------------------------------------------------------------ -->
+
+
+  <!-- partner section start ------------------------------------------------------------ -->
+  <div class="partner">
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+            <img src="./assets/img/partner-1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-4.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-5.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-4.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-5.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-4.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-5.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/partner-5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+      
+   
+  <!-- /partner section end ------------------------------------------------------------ -->
 
 
   <!-- footer section start -------------------------------------------------- -->
@@ -744,20 +891,51 @@
     </div>
   </div>
   <!-- /copy right area end -------------------------------------------------- -->
-  <script>
-    var slider1 = document.querySelector('.slider1');
-    let slider_wrapper1 = slider1.getElementsByClassName('slider_wrapper1');
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    function prev() {
-      slider1.prepend(slider_wrapper1[slider_wrapper1.length-1]);
-    }
+<script>
+    var testimonial = new testimonial(".mySwipe", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    spaceBetween: 3,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 3600,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+    });
 
-    setInterval (
-      function next () {
-        slider1.append(slider_wrapper1[0]);
-      },1000
-    )
-  </script>
+    var testimonial2 = new testimonial(".mySwipe", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+          delay: 2100,
+        },
+        grabCursor: true,
+        breakpoints:{
+            0:{
+                slidesPerView: 1,  
+            },
+            520:{
+                slidesPerView: 2,  
+            },
+            720:{
+                slidesPerView: 3,  
+            },
+            950:{
+                slidesPerView: 5,  
+            },
+        }
+      });
+      </script>
   <script src="./assets/js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
     integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="

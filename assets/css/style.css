@@ -276,7 +276,7 @@ li:hover ul.submenu{
 
 
 /* kindergarden css start ----------------------------------------------- */
-.kidergarden .who-we-are-img img {
+.who-we-are-img img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -284,7 +284,7 @@ li:hover ul.submenu{
     padding: 20px;
 }
 
-.kidergarden .who-we-are-img{
+.who-we-are-img{
     position: relative;
     z-index: 1;
     text-align: center;
@@ -331,13 +331,13 @@ h1 {
     font-size: 45px;
 }
 
-.kidergarden .num {
+.num {
     color: var(--blue);
 }
 
 
 
-.kidergarden .num span {
+.num span {
     color: #fff;
     background-color: var(--orange);
     width: 30px;
@@ -352,7 +352,7 @@ h1 {
 }
 
 
-.kidergarden .num:hover span{
+.num:hover span{
     transition: all 0.5s ease-in;
     background-color: var(--yellow);
 }
@@ -1166,6 +1166,10 @@ ul {
     display: inline-block;
 }
 
+.instructor .instructor-img {
+    margin-bottom: 30px;
+}
+
 .instructor .instructor-img .image::before {
     content: " ";
     width: 100%;
@@ -1285,6 +1289,25 @@ ul {
 }
 /* /registration css end -------------------------------------------- */
 
+/* /registration css end -------------------------------------------- */
+.o-classes .choose-shape-1 {
+    top: 15%;
+    right: 34%;
+    z-index: 99;
+    animation: moveshape 3s linear infinite;
+}
+.o-classes .choose-shape-2 {
+    top: 50%;
+    right: 3%;
+    animation: moveshape 3s linear infinite;
+}
+.o-classes .choose-shape-3 {
+    top: 63%;
+    right: 29%;
+    animation: moveshape 3s linear infinite;
+}
+/* /registration css end -------------------------------------------- */
+
 /* testimonials css start -------------------------------------------- */
 .bg-cream {
     background-color: #fef3e6;;
@@ -1294,7 +1317,7 @@ ul {
     /* width: 100%; */
 }
 
-.testimonials .title {
+.title {
     margin-bottom: 45px;
 }
 .testimonials .testimonial-content p {
@@ -1340,6 +1363,7 @@ ul {
 .testimonial {
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 .testimonials .slider1 {
@@ -1367,11 +1391,156 @@ ul {
 .testimonials #slider-left {
     right: 70px;
 }
+
+
 /* /testimonials css end -------------------------------------------- */
+
+
+/* pricing css start -------------------------------------------- */
+.pricing thead th {
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: bold;
+    padding: 30px 25px;
+}
+
+.pricing tbody th,.pricing tbody tr th,.pricing tbody tr td{
+    padding: 30px 25px;
+    border: 1px solid #f0f0f0;
+    font-weight: 400;
+    color: #6b6b84;
+    font-size: 18px;
+}
+/* /pricing css end -------------------------------------------- */
+
+
+/* newsletter css start -------------------------------------------- */
+.newsletter {
+    background-color: #fdeee9;
+    width: 100%;
+    z-index: 1;
+}
+
+.newsletter .newsletter-shape-1{
+    bottom: 60px;
+    max-width: 250px;
+    z-index: -1;
+    left: 0;
+}
+
+.newsletter .newsletter-shape-2{
+    right: 0;
+    bottom: 30px;
+    max-width: 250px;
+    z-index: -1;
+}
+
+.newsletter img {
+    display: block;
+    max-width: 100%;
+}
+
+.newsletter h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.newsletter-form {
+    position: relative;
+}
+
+.newsletter .newsletter-form .input-text {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding-left: 25px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: var(--blue);
+    outline: 0;
+    
+}
+
+.newsletter .newsletter-form button {
+    background-color: var(--orange);
+    padding: 0 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    height: 52px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    transition: all 0.5s;
+}
+
+.newsletter .newsletter-form button:hover {
+    transition: all 0.5s;
+    background-color: var(--blue);
+}
+/* /newsletter css end -------------------------------------------- */
+
+/* partner css start -------------------------------------------- */
+.partner {
+    background-color: #fdf9f4;
+}
+
+.partner .slider {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 250px;
+    
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 100s linear infinite;
+}
+
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+} 
+
+.partner .slider img {
+    width: 100%;
+}
+/* /partner css end -------------------------------------------- */
 
 
 /* ---------------------------------------------------------------about section start--------------------------------------------------------------------- */
 
+@keyframes moveshape {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+}
 
 @keyframes move {
     0%{}
