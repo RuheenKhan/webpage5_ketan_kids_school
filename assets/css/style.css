@@ -799,7 +799,6 @@ h1 {
 .event .event-box h3 a{
     color: var(--blue);
     text-decoration: none;
-    font-weight: 600;
 }
 
 .event .event-box .event-list {
@@ -816,6 +815,7 @@ h1 {
     font-size: 80px;
     color: var(--orange) !important;
     font-weight: bold;
+    margin-bottom: 0 !important;
 }
 
 .event .event-box .event-date span {
@@ -1688,6 +1688,10 @@ ul {
     .core-value #value-shape-3 {
         display: none;
     }
+
+    .blog .blog-content ul {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width:1270px){
@@ -1767,6 +1771,14 @@ ul {
         display: none;
     }
 
+    .classes {
+        padding: 30px 0;
+    }
+
+    .classes h1 {
+        font-size: 35px;
+    }
+
     .core-value {
         padding: 30px 0;
     }
@@ -1781,6 +1793,55 @@ ul {
 
     .core-value .core-right {
         padding-left: 0;
+    }
+
+    .teacher {
+        padding: 30px 0;
+    }
+
+    .teacher h1 {
+        font-size: 35px;
+    }
+
+    .teacher h3 {
+        font-size: 25px;
+    }
+
+    .event {
+        padding: 30px 0;
+    }
+
+    .event h1 {
+        font-size: 35px;
+    }
+
+    .event .event-box {
+        text-align: center;
+    }
+
+    .event .event-box h3 {
+        font-size: 23px;
+    }
+
+    .event .event-box .event-date h4 {
+        font-size: 54px;
+    }
+
+    .blog {
+        padding: 30px 0;
+    }
+
+    .blog h1 {
+        font-size: 35px;
+        margin-bottom: 20px !important;
+    }
+
+    .blog .blog-content ul {
+        display: block !important;
+    }
+
+    footer {
+        padding: 50px 0 !important;
     }
 }
 
@@ -1808,9 +1869,49 @@ ul {
         padding: 45px 20px 30px !important;
     }
 
+    .classes h1 {
+        font-size: 25px;
+    }
+
     .core-value h1 {
         font-size: 25px;
     }
 
+    .teacher h1 {
+        font-size: 30px;
+    }
+
+    .event h1 {
+        font-size: 25px;
+    }
+
+    .event h3 {
+        margin-top: 10px;
+    }
+
+    .blog h1 {
+        font-size: 25px;
+    }
+
+    .blog .blog-content ul {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .blog .blog-content {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .blog .blog-content ul {
+        display: block !important;
+    }
+}
     
+@media screen and (max-width:360px) {
+    .btn-media {
+        margin-top: 10px;
+    }
 }
