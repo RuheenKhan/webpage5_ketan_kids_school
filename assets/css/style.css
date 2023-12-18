@@ -353,7 +353,7 @@ h1 {
     color: var(--blue);
 }
 
-.kidergarden ul li {
+.common ul li {
     color: var(--blue);
     font-weight: 600;
     font-size: 16px;
@@ -365,7 +365,7 @@ h1 {
     flex: 0 0 50%;
 }
 
-.kidergarden ul li span {
+.common ul li span {
     position: absolute;
     top: 0;
     left: 0;
@@ -380,10 +380,6 @@ h1 {
     font-size: 18px;
     margin-right: 15px;
     transition:all 0.5s;
-}
-
-.kidergarden ul .p-left {
-    padding-right: 80px;
 }
 
 .num:hover span{
@@ -560,7 +556,6 @@ h1 {
     left: 20px;
 }
 
-
 .core-value #value-shape-2{
     bottom: 30px;
     left: 20px;
@@ -604,7 +599,6 @@ h1 {
     margin-right: auto;
     padding-left: 95px;
     margin-bottom: 0;
-    
 }
 
 .teacher .social li{
@@ -614,6 +608,7 @@ h1 {
     opacity: 0;
     transition: all 0.3s ease-in-out 0s;
 }
+
 .teacher .social li a {
     display: block;
     width: 33px;
@@ -624,9 +619,6 @@ h1 {
     color: #fff;
     line-height: 36px;
     position: relative;
-    
-    
-    /* font-size: 20px; */
 }
 
 .teacher .teacher-info:hover li{
@@ -1111,6 +1103,7 @@ footer .footer-details .photo-gallery .photo-list:hover img {
     padding: 200px 0;
     background-attachment: fixed;
     width: 100%;
+    margin-top: 60px;
 }
 
 .about-banner .breadcrump ul .v-line {
@@ -1326,19 +1319,21 @@ ul {
 
 /* o-classes css start -------------------------------------------- */
 .o-classes .choose-shape-1 {
-    top: 15%;
-    right: 34%;
-    z-index: 99;
+    top: 0;
+    left: 0;
+    z-index: 1;
     animation: moveshape 3s linear infinite;
 }
 .o-classes .choose-shape-2 {
     top: 50%;
-    right: 3%;
+    right: -10%;
+    z-index: -1;
     animation: moveshape 3s linear infinite;
 }
 .o-classes .choose-shape-3 {
-    top: 63%;
-    right: 29%;
+    bottom: 10%;
+    left: 12%;
+    z-index: -1;
     animation: moveshape 3s linear infinite;
 }
 /* /o-classes css end -------------------------------------------- */
@@ -1521,16 +1516,15 @@ ul {
 /* partner css start -------------------------------------------- */
 .partner {
     background-color: #fdf9f4;
+    width: 100%;
 }
 
 .partner .slider {
     position: relative;
     display: grid;
     place-items: center;
-    width: 90%;
-    margin: auto;
     overflow: hidden;
-    height: 250px;
+    /* width: 90%; */
     
 }
 
@@ -1542,11 +1536,11 @@ ul {
 
 
 .slide {
-    height: 200px;
+    /* height: 200px; */
     width: 250px;
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding:0 40px;
 } 
 
 .partner .slider img {
@@ -1587,31 +1581,6 @@ ul {
     100%{
         transform: translateX(calc(-250px * 8));
     }
-}
-
-@keyframes move {
-    0%{}
-    100%{left: 3.5%;}
-}
-
-@keyframes move1 {
-    50%{}
-    100%{left: 52%;}
-}
-
-@keyframes move2 {
-    0%{}
-    100%{left: 3.5%;}
-}
-
-@keyframes move3 {
-    50%{}
-    100%{top: 81%;}
-}
-
-@keyframes move4 {
-    90%{}
-    100%{left: 88%;}
 }
 
 @keyframes border-transform-default {
@@ -1692,6 +1661,15 @@ ul {
     .blog .blog-content ul {
         display: block !important;
     }
+
+    .fun-fact .fun-fact-content h3 {
+        font-size: 40px;
+        margin-bottom: 0 !important;
+    }
+
+    .instructor .instructor-content h3 {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:1270px){
@@ -1717,6 +1695,10 @@ ul {
         display: none;
     }
 
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
     .banner .shape-2{
         display: none;
     }
@@ -1738,10 +1720,6 @@ ul {
         margin: auto;
     }
 
-    .banner-content h1 {
-        font-size: 45px;
-    }
-
     .banner-content span {
         font-size: 18px;
     }
@@ -1755,12 +1733,20 @@ ul {
         display: none;
     }
 
-    .kidergarden .who-we-are-img{
+    .who-we-are-img{
         margin-bottom: 30px;
     }
 
-    .kidergarden {
+    .common {
         padding: 50px 0;
+    }
+
+    .kidergarden h1 {
+        font-size: 35px;
+    }
+
+    .cultural h1, .o-classes h1 {
+        font-size: 30px;
     }
 
     .core-value .core-img {
@@ -1843,9 +1829,42 @@ ul {
     footer {
         padding: 50px 0 !important;
     }
+
+    .common-pd {
+        padding: 70px 40px;
+    }
+
+    .instructor .instructor-content h3 {
+        font-size: 30px;
+    }
+
+    .common-100 {
+        padding: 70px 0;
+    }
+
+    .o-classes .choose-shape-1, .o-classes .choose-shape-2, .o-classes .choose-shape-3 {
+        display: none;
+    }
+
+    .pricing h1 {
+        font-size: 35px;
+    }
+
+    .pricing tbody th, .pricing tbody tr th, .pricing tbody tr td  {
+        font-size: 16px;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 15px;
+    }
+
+    
 }
 
 @media screen and (max-width:768px){
+    .btn {
+        padding: 8px 20px;
+    }
     .banner-content h1 {
         font-size: 30px;
     }
@@ -1854,10 +1873,18 @@ ul {
         font-size: 17px;
     }
 
-    .kidergarden ul li {
+    .common ul li {
         flex: unset;
         max-width: unset;
         margin-right: 20px;
+    }
+
+    .kidergarden h1 {
+        font-size: 27px;
+    }
+
+    .cultural h1, .o-classes h1 {
+        font-size: 23px;
     }
 
     .classes ul li {
@@ -1896,21 +1923,160 @@ ul {
     .blog .blog-content ul {
         display: flex !important;
     }
-}
 
-@media screen and (max-width:576px) {
-    .blog .blog-content {
+    footer .ketan-content h2 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .about-banner {
+        padding: 70px 0;
+    }
+
+    .about-banner .breadcrump h2 {
+        font-size: 33px;
+    }
+
+    .breadcrump ul li {
+        font-size: 14px;
+    }
+
+    .common-pd {
+        padding: 50px 20px;
+    }
+
+    .fun-fact .fun-fact-content h3 {
+        font-size: 35px;
+        margin-bottom: 0 !important;
+    }
+
+    .fun-fact .fun-fact-content {
+        padding: 35px;
+    }
+
+    .instructor-content {
+        margin-bottom: 30px;
+    }
+
+    .instructor .instructor-content h3 {
+        font-size: 25px;
+    }
+
+    .common-100 {
+        padding: 50px 0;
+    }
+
+    .quote-content {
         padding: 20px;
+    }
+
+    .registration h1 {
+        font-size: 30px;
+    }
+
+    .pricing h1 {
+        font-size: 28px;
+    }
+
+    .newsletter-shape-1, .newsletter-shape-2 {
+        display: none;
+    }
+
+    .newsletter .newsletter-form button {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+    .partner .slider img {
+        max-width: 100px;
     }
 }
 
+@media screen and (max-width:576px) {
+    .banner-content h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .common h1 {
+        font-size: 22px;
+    }
+    .blog .blog-content {
+        padding: 20px;
+    }
+
+    footer .ketan-content h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .ketan-content p {
+        margin-bottom: 5px !important;
+    }
+
+    footer .ketan-social-icon {
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .copy-right p span {
+        font-size: 16px;
+    }
+
+    .copy-right {
+        padding: 20px 0;
+    }
+
+    .registration h1 {
+        font-size: 22px;
+    }
+
+    .pricing thead th {
+        font-size: 18px;
+        padding: 25px;
+    }
+
+    .table-content p {
+        font-size: 12px !important;
+    }
+    
+    .newsletter h2 {
+        font-size: 20px;
+    }
+
+    .newsletter .newsletter-form .input-text {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .copy-right p {
+        font-size: 12px;
+    }
+
+    .copy-right p span {
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:360px) {
     .blog .blog-content ul {
         display: block !important;
     }
 }
     
-@media screen and (max-width:360px) {
+@media screen and (max-width:299px) {
     .btn-media {
         margin-top: 10px;
     }
