@@ -1,0 +1,15 @@
+.teacher-banner {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/page-banner-2.jpg');
+}
+
+.about-banner h2 {
+    margin-bottom: 15px !important;
+}
+
+.teacher-2 {
+    background-image: unset;
+}
+
+.teacher-2 .teacher-info {
+    margin-bottom: 30px;
+}

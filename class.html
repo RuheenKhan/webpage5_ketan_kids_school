@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/teacher.css" />
+    <link rel="stylesheet" href="./assets/css/event.css" />
+    <link rel="stylesheet" href="./assets/css/class.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Ketan - Childcare & Kids School Class Template</title>
+  </head>
+  <body>
+    <!-- Header section start ------------------------------------------------------------ -->
+    <nav class="navbar navbar-expand-xl bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./assets/img/logo.png" alt="ketan_logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold me-2"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#"
+                >Pages <i class="fa-solid fa-angle-down fs-7"></i
+              ></a>
+              <ul class="submenu">
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">How to Apply</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Programs</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">Enroll</a></li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Timetable</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Error Page</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Terms of Service</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Coming Soon</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#"
+                >Teacher <i class="fa-solid fa-angle-down fs-7"></i
+              ></a>
+              <ul class="submenu">
+                <li class="nav-item">
+                  <a href="teacher.html" class="nav-link">Teacher</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Teacher Details</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#"
+                >Event <i class="fa-solid fa-angle-down fs-7"></i
+              ></a>
+              <ul class="submenu">
+                <li class="nav-item">
+                  <a href="event.html" class="nav-link">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Event Details</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#"
+                >Class <i class="fa-solid fa-angle-down fs-7"></i
+              ></a>
+              <ul class="submenu">
+                <li class="nav-item">
+                  <a href="class.html" class="nav-link">Class</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Class Details</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#"
+                >Blog <i class="fa-solid fa-angle-down fs-7"></i
+              ></a>
+              <ul class="submenu">
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Blog Details</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="others-options d-flex align-items-center">
+            <div class="option-item">
+              <ul class="me-4 mt-3">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="#"
+                    >Language <i class="fa-solid fa-angle-down fs-7"></i
+                  ></a>
+                  <ul class="submenu">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">English</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link">العربيّة</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link">Deutsch</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link">Portugues</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link">简体中文 </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="option-item">
+              <button type="submit" class="btn1 btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /Header section end ------------------------------------------------------------ -->
+
+    <!-- event-about-section start  -->
+    <section class="about-banner class-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="breadcrump">
+              <h2 class="text-center text-white">Class</h2>
+              <ul class="d-flex align-items-center justify-content-center">
+                <li class="">
+                  <a href="index.html" class="text-white fw-bold">Home</a>
+                </li>
+                <li class="active position-relative v-line">Class</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /event-about-section end  -->
+
+    <!-- Classes section start -------------------------------------------------- -->
+    <section class="classes position-relative pt-100 pb-70 classes-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5 overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-1.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $880
+                </div>
+                <h4 class="card-title fw-bold">Color Matching</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-2.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $790
+                </div>
+                <h4 class="card-title fw-bold">Learning Disciplines</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-3.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $590
+                </div>
+                <h4 class="card-title fw-bold">Drawing</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5 overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-4.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $880
+                </div>
+                <h4 class="card-title fw-bold">Martial Art Class</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5 overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-5.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $790
+                </div>
+                <h4 class="card-title fw-bold">Music Class</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card mb-5 overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/class-6.jpg"
+                  class="card-img-top class-img"
+                  alt="..."
+                />
+              </div>
+
+              <div class="card-body position-relative">
+                <div class="price position-absolute top-0 end-0 text-white">
+                  $590
+                </div>
+                <h4 class="card-title fw-bold">Kids Painting Class</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-unstyled">
+                  <li><span>Age:</span> 3-5 Year</li>
+                  <li><span>Time:</span> 8-10 AM</li>
+                  <li class="me-0"><span>Seat:</span> 25</li>
+                </ul>
+                <button type="submit" class="btn btn1">Join Class</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="class-shape position-absolute bottom-0 start-0">
+        <img src="./assets/img/class-shape-1.png" alt="" />
+      </div>
+      <div class="class-shape position-absolute bottom-0 end-0">
+        <img src="./assets/img/class-shape-2.png" alt="" />
+      </div>
+    </section>
+    <!-- /Classes section end -------------------------------------------------- -->
+
+    <!-- footer section start -------------------------------------------------- -->
+    <footer class="pt-100 pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-details">
+              <div class="ketan-content">
+                <h2><a href="index.html">Ketan</a></h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="ketan-social-icon">
+                  <ul class="d-flex">
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-details">
+              <h3>Contact Us</h3>
+              <div class="footer-contact-info">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-phone icon"></i>
+                    <span>Phone</span><br />
+                    <a href="" class="line">882-569-756</a>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <span>Email</span><br />
+                    <a href="ruheenk39@gmail.com" class="line"
+                      >ruheenk39@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <span>Address</span><br />
+                    <p class="text-white">
+                      175 5th Ave Premium Area, New York, NY 10010, United
+                      States
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-details">
+              <h3>Activities</h3>
+              <ul class="footer-links">
+                <li><a href="" class="line">Maths Olympaid</a></li>
+                <li><a href="" class="line">Art Competition</a></li>
+                <li><a href="" class="line">English Novels</a></li>
+                <li><a href="" class="line">Science Compitition</a></li>
+                <li><a href="" class="line">Teachers Day</a></li>
+                <li><a href="" class="line">World Kids Day</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-details">
+              <h3>Photo Gallery</h3>
+              <div class="photo-gallery">
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-1.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-2.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-3.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-4.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-5.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-6.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-1.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-2.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+                <div class="photo-list overflow-hidden">
+                  <img
+                    src="./assets/img/footer-gallery-3.jpg"
+                    class="img-fluid photo"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer section end -------------------------------------------------- -->
+
+    <!-- copy right area start -------------------------------------------------- -->
+    <div class="copy-right">
+      <div class="container">
+        <div class="copy-right-content text-center">
+          <p class="text-white">
+            Copyright @2023 Ketan. All Rights Reserved by
+            <span>RuheenKhan</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /copy right area end -------------------------------------------------- -->
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

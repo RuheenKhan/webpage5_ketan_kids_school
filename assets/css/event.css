@@ -1,0 +1,37 @@
+.event-banner {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/page-banner-4.jpg');
+}
+
+.event-page {
+    background-image: unset;
+}
+
+.bg-liteorange {
+    background-color: #fdeee9;
+}
+
+.event-page .event-box {
+    box-shadow: 0 0 0;
+    padding: 35px 15px;
+}
+
+.event-page .event-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.event-page .event-box h3 a {
+    color: #EA512E;
+    background-color: rgb(234, 81, 46,0.1);
+    padding: 5px 35px;
+    border-radius: 5px;
+}
+
+.event-page .event-box span {
+    color: #EA512E;
+    font-weight: 600;
+}
+
+.event-page .container-fluid {
+    max-width: 1450px;
+}

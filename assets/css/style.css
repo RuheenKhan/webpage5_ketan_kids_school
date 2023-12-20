@@ -1765,6 +1765,10 @@ ul {
         font-size: 35px;
     }
 
+    .classes .class-shape {
+        display: none;
+    }
+
     .core-value {
         padding: 30px 0;
     }

@@ -1,0 +1,7 @@
+.class-banner {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/page-banner-2.jpg');
+}
+
+.classes-2 {
+    background-color: unset;
+}
